@@ -1,0 +1,78 @@
+body {
+  background-image: url("26669.jpg");
+  background-size: 100%;
+  margin: 0 auto;
+  font-family: 'Aleo', Courier, monospace;
+}
+
+header {
+  /* height: 40px; */
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.title {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.content{
+  position: relative;
+  margin: 70px auto 5% auto;
+  /* background-color: hsla(hue, saturation, lightness, alpha); */
+  background-color: hsla(50, 33%, 25%, .2);
+  height: 900px;
+}
+
+.game {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  width: 1000px;
+  position: absolute;
+  left: 5%;
+  text-align: center;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.gameboard {
+  margin: auto 0;
+}
+
+.row {
+  display: inline-block;
+}
+.block {
+  /* border: dotted black; */
+  background-color: white;
+  border: solid black 0.5px;
+  width: 100px;
+  height: 100px;
+  /* margin: 2px; */
+}
+
+#b1{
+  background-image: url(zuma.png);
+  background-size: 100%;
+}
+
+.score {
+  background-color: indianred;
+  margin: 10px;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  right: 5%;
+  width: 400px;
+  height: 800px;
+  border-radius: 10px;
+
+}
+
+
+
