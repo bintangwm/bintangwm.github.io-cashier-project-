@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kodok Juma</title>
   <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="index.js"> -->
   <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
 </head>
 <body>
@@ -20,7 +21,7 @@
     <div class="game">
       <h2>Game Section</h2>
       <div class="gameBoard"> <!-- Game Board -->
-        <div class="row">
+        <!-- <div class="row">
           <div class="block" id="b1">
           </div>
           <div class="block" id="b2">
@@ -79,34 +80,45 @@
           </div>
           <div class="block" id="b25">
           </div>
-        </div>
+        </div> -->
+        <table id="gameTable">
+        </table>
       </div>
-
+      <button onclick="start(3)">Mulai</button>
+      <br>
+      <button onclick="clicked()">miscellaneous</button>
       <div class="miscellaneous">
-        miscellaneous
+        <div class="coba"></div>
         <div class="time">
-          <h3>Time : </h3>
+          <h3>Time : </h3><h3 id="round">0</h3>
         </div>
         <div class="scoreBar">
-          <h3>Score : </h3>
+          <h3>Score : </h3><h3 id="scoreValue">0</h3>
         </div>
-        <h3>Instruction</h3>
+        <h3>Instruction : </h3>
+        <p>Klik mulai, lalu</p>
         <p>Klik Kodok sebanyak-banyaknya, dan raih lah skor tertinggi!</p>
       </div>
     </div>
-
-    <div class="score">
-      <div>
-        Score Banner
-      </div>
-      <div>
-        Score List
-      </div>
+    <div class="scoreBoard">
+      <h2>Score History</h2>
+      <table class="scoreTables">
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+      </table>
+      <div id="coba"></div>
+      <table id="scoreHistory">
+        <tr>
+          <td>Bill Gates</td>
+          <td>55577854</td>
+        </tr>
+      </table>
     </div>
-
   </div>
-<!-- <footer>
-  Pemanis buatan
-</footer> -->
+
+  <script src="index.js"></script>
+
 </body>
 </html>

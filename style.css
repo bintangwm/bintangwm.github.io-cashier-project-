@@ -6,7 +6,6 @@ body {
 }
 
 header {
-  /* height: 40px; */
   position: fixed;
   top: 0;
   background-color: white;
@@ -21,58 +20,85 @@ header {
 }
 
 .content{
-  position: relative;
-  margin: 70px auto 5% auto;
-  /* background-color: hsla(hue, saturation, lightness, alpha); */
-  background-color: hsla(50, 33%, 25%, .2);
-  height: 900px;
+  margin: 70px auto ;
+  /* background-color: hsla(50, 33%, 25%, .2); */
+}
+
+h2 {
+  text-decoration: underline;
 }
 
 .game {
-  background-color: white;
-  margin: 10px;
+  background-color:white;
+  margin: 5px auto;
   padding: 20px;
-  width: 1000px;
-  position: absolute;
-  left: 5%;
+  width: 800px;
   text-align: center;
   z-index: 1;
   border-radius: 10px;
 }
 
 .gameboard {
-  margin: auto 0;
+  text-align: center;
 }
 
-.row {
-  display: inline-block;
+
+table {
+  text-align: center;
+  margin: 0 auto;
 }
-.block {
-  /* border: dotted black; */
-  background-color: white;
+
+.tableBlock {
+  background-color: wheat;
   border: solid black 0.5px;
+  margin: 5px 0;
   width: 100px;
   height: 100px;
-  /* margin: 2px; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#b1{
+.miscellaneous {
+  /* border: solid black 1px;
+  border-radius: 10px; */
+  /* margin: 4px; */
+  padding: 8px;
+
+}
+
+/* #b13{
   background-image: url(zuma.png);
   background-size: 100%;
-}
+  cursor: pointer;
+} */
 
-.score {
-  background-color: indianred;
-  margin: 10px;
+.scoreBoard {
+  background-color: white;
+  margin: 0 auto;
   padding: 20px;
-  position: absolute;
+  width: 800px;
   text-align: center;
-  right: 5%;
-  width: 400px;
-  height: 800px;
+  z-index: 1;
   border-radius: 10px;
-
 }
+
+.scoreTables tr th {
+  width: 50%;
+  padding: 10px 40px;
+  /* border: black  solid; */
+  border-bottom: black 2px solid;
+  color: red;
+}
+
+#scoreHistory tr td {
+  width: 50%;
+  padding: 10px 40px;
+  /* border: black  solid; */
+  text-align: center;
+  color: black;
+}
+
+
 
 
 
