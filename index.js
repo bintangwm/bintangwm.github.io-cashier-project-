@@ -61,7 +61,6 @@ function kodokRandom() { //Untuk merandom ID kodok
   printKodok(kodokId) //Menampilkan kodok random
 }
 
-
 function hapusKodok(ele) {
   document.getElementById(ele).style.backgroundImage = 'none';
   document.getElementById(ele).style.backgroundSize = '100%';
@@ -80,27 +79,3 @@ function clicked() {
   document.getElementById("scoreValue").innerHTML = temp
   kodokRandom()
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// function kodokRandom() {
-//   if (kodokId) {
-//     hapusKodok(kodokId)
-//   } 
-//   console.log(kodokId)
-//   var kodokId = 'b' + (Math.floor(Math.random() * 25) + 1)
-//   printKodok(kodokId)
-//   console.log(kodokId)
-// }
-
-// kodokRandom()
-// kodokRandom()
